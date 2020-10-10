@@ -83,7 +83,7 @@ public class Task1 {
             myReader.close();
             int[] array = Arrays.stream(data.split(" ")).mapToInt(Integer::parseInt).toArray();
             StringBuilder strBuffer = new StringBuilder("");
-            for (int k = 1; k <= array.length/50;k++){
+            for (int k = 1; k < array.length/20;k++){
                 int n = 20*k;
                 double sum = 0;
                 for (int i = 0;i < 20;i++){
@@ -102,7 +102,7 @@ public class Task1 {
             System.out.printf("%.2f", a);
             System.out.println();
             double b = printSumResult(file2);
-            System.out.println(b);
+            System.out.printf("%.0f", b);
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
