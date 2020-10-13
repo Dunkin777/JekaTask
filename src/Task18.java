@@ -27,7 +27,7 @@ public class Task18 {
         if (Character.getNumericValue(string.charAt(0)) == 7){
             string = string + "7";
         }
-        String substring = string.substring(1, string.length());
+        String substring = string.substring(1);
         return count7(Integer.parseInt(substring));
     }
 }
