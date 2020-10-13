@@ -81,7 +81,7 @@ public class Task1 {
             }
             myReader.close();
             int[] array = Arrays.stream(data.split(" ")).mapToInt(Integer::parseInt).toArray();
-            StringBuilder strBuffer = new StringBuilder("");
+            StringBuilder strBuffer = new StringBuilder();
             for (int k = 1; k < array.length/20;k++){
                 int n = 20*k;
                 double sum = 0;
