@@ -6,6 +6,8 @@ public class Task18 {
         int[] arr =  {1, 10, 1241, 50402, -50, 249, 10215, 665, 2295, 7, 311};
         System.out.println(resSumArr(arr));
         System.out.println(count7(717771237));
+
+        System.out.println(717771237/10);
     }
     static int resSumArr(int[] arr){
         if (arr.length == 1) {
